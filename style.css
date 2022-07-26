@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@font-face {
+  font-family: 'Sriracha';
+  src: url(fontes/Sriracha-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+:root {
+  --fonte01: 'Sriracha', cursive;
+  --fonte02: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte03: 'Passion One', cursive;
+}
+
+* {
+  margin: 0%;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+header {
+  position: relative;
+  color: white;
+  background-color: black;
+  padding: 90px;
+  text-align: center;
+  height: 15vh;
+}
+
+header > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  display: block;
+  font-size: 10vw;
+  font-family: var(--fonte03);
+  font-variant: small-caps;
+}
+
+header p {
+    font-size: 1em;
+    font-family: var(--fonte02)
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: darkgray;
+
+}
+section{
+  line-height: 2em;
+  font-size: 3.5vw;
+  padding-left: 30px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+section.imagem > p {
+  display: inline-block;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+section > p {
+  font-family: var(--fonte01);
+  padding-bottom: 10vh;
+}
+section.imagem {
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.329);
+}
+
+section#img01 {
+  background: black url('imagens/background001.jpg') right center no-repeat fixed;
+  background-size: cover;
+}
+section#img02 {
+  background: black url('imagens/background002.jpg') right center no-repeat fixed;
+  background-size: cover;
+}
+footer {
+  white-space: nowrap;
+  font-family: var(--fonte02);
+  font-size: 1.2vw;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  background-color: black;
+}
+.sotexto {
+  color: black;
+  background-color: white;
+}
+.imagem {
+  color: white;
+}
